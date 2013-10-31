@@ -10,7 +10,7 @@
                    displayName="Important Files"
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
-      <itemPath>makefile</itemPath>
+      <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
@@ -35,7 +35,7 @@
           <executablePath>e:/spl/assignments/ass1/bin/hello</executablePath>
           <ccTool>
             <incDir>
-              <pElem>e:/spl/assignments/ass1</pElem>
+              <pElem>.</pElem>
             </incDir>
           </ccTool>
         </makeTool>
