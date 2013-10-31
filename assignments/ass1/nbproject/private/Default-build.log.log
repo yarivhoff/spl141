@@ -1,0 +1,6 @@
+g++ -g -Wall -Weffc++ -c -Linclude -o bin/main.o src/main.cpp
+Building target: hello
+Invoking: C++ Linker
+g++ -o bin/hello bin/main.o 
+Finished building target: hello
+ 
