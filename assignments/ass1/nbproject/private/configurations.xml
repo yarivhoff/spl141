@@ -5,13 +5,11 @@
       <df name="bin">
       </df>
       <df name="include">
-      </df>
-      <df name="oldnbproject">
-        <df name="private">
-        </df>
+        <in>UniCoffeShop.h</in>
       </df>
       <df name="src">
-        <in>main.cpp</in>
+        <in>Main.cpp</in>
+        <in>UniCoffeShop.cpp</in>
       </df>
     </df>
   </logicalFolder>
