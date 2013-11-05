@@ -84,7 +84,6 @@ int main(void) {
                     //productName,ingredients.find(line.substr(pos, next_space - pos))
                     tempIngredient.push_back(line.substr(pos, next_space - pos));
                 }
-
                 pos=line.find_first_not_of(",", next_space);
             }
             double totalProductPrice = 0;
@@ -105,19 +104,13 @@ int main(void) {
     else cout << "Unable to open file";
     for(map<string,set<string> >::iterator it3 = suppList.begin(); it3 != suppList.end();it3++){
         myfile2 << it3->first << ", ";
-        cout << it3->first << ":";
         for(set<string>::iterator it4= it3->second.begin() ;it4!= it3->second.end() ; it4++){
             myfile2 << it4->data();
-
-            cout << it4->data();
-
             if (it4 ->data()!= it3->second.rbegin()->data()){
                 myfile2 << ", ";
-                cout  << ", ";
             }
         }
         myfile2 << "\n";
-        cout << endl;
     }
     myfile2.close();
 
