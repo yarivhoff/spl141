@@ -1,12 +1,12 @@
 # All Targets
-all: UniCoffeShop
+all: UniCoffeeShop
 
 # Tool invocations
 # Executable "hello" depends on the files hello.o and run.o.
-UniCoffeShop: bin/Main.o bin/UniCoffeShop.o
-	@echo 'Building target: UniCoffeShop'
+UniCoffeeShop: bin/Main.o bin/UniCoffeeShop.o
+	@echo 'Building target: UniCoffeeShop'
 	@echo 'Invoking: C++ Linker'
-	g++ -o bin/UniCoffeShop bin/main.o bin/UniCoffeShop.o
+	g++ -o bin/UniCoffeeShop bin/main.o bin/UniCoffeeShop.o
 	@echo 'Finished building target: hello'
 	@echo ' '
 
@@ -14,8 +14,8 @@ UniCoffeShop: bin/Main.o bin/UniCoffeShop.o
 bin/Main.o: src/Main.cpp
 	g++ -g -Wall -Weffc++ -c -Linclude -o bin/Main.o src/Main.cpp
 	
-bin/UniCoffeShop.o: src/UniCoffeShop.cpp
-	g++ -g -Wall -Weffc++ -c -Linclude -o bin/UniCoffeShop.o src/UniCoffeShop.cpp
+bin/UniCoffeeShop.o: src/UniCoffeeShop.cpp
+	g++ -g -Wall -Weffc++ -c -Linclude -o bin/UniCoffeeShop.o src/UniCoffeeShop.cpp
 
 #Clean the build directory
 clean: 

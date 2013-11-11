@@ -1,14 +1,14 @@
-/* 
- * File:   UniCoffeShop.h
- * Author: Eddie
- *
- * Created on 4 נובמבר 2013, 19:09
- */
-
+#include<vector>
+#include <map>
+#include <string>
+#include<iostream>
+using namespace std;
 #ifndef UNICOFFESHOP_H
 #define	UNICOFFESHOP_H
+map<string, pair<string,double> > getIngerdients(string fileName);
 
+void printIngredients(map<string, pair<string,double> > ingredientsList);
 
-
-#endif	/* UNICOFFESHOP_H */
+map<string,set<string> > getSuppliersList(map<string, pair<string,double> > ingredients);
+#endif	
 
