@@ -108,3 +108,22 @@ map<string,set<string> > getSuppliersList(map<string, pair<string,double> > ingr
     
     
 }
+
+void generateSuppliersFile(map<string,set<string> > suppList) {
+    ofstream myfile2;
+    myfile2.open ("Suppliers.out");
+
+    //Suppliers data structure
+
+    for(map<string,set<string> >::iterator it3 = suppList.begin(); it3 != suppList.end();it3++){
+        myfile2 << it3->first << ", ";
+        for(set<string>::iterator it4= it3->second.begin() ;it4!= it3->second.end() ; it4++){
+            myfile2 << it4->data();
+            if (it4 ->data()!= it3->second.rbegin()->data()){
+                myfile2 << ", ";
+            }
+        }
+        myfile2 << "\n";
+    }
+    myfile2.close();
+}
