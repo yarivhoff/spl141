@@ -6,7 +6,7 @@ all: UniCoffeeShop
 UniCoffeeShop: bin/Main.o bin/UniCoffeeShop.o
 	@echo 'Building target: UniCoffeeShop'
 	@echo 'Invoking: C++ Linker'
-	g++ -o bin/UniCoffeeShop bin/main.o bin/UniCoffeeShop.o
+	g++ -o bin/UniCoffeeShop bin/Main.o bin/UniCoffeeShop.o
 	@echo 'Finished building target: hello'
 	@echo ' '
 
